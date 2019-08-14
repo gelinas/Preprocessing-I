@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto&display=swap');
 html,
 body,
 div,
@@ -133,7 +134,79 @@ table {
 html,
 body {
   height: 100%;
+  max-width: 100%;
 }
-h1 {
-  margin: 100px;
+/* my LESS */
+/*Variable*/
+/* Variables */
+/* Mix-Ins */
+/* LESS */
+html,
+body {
+  font-size: 62.5%;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+html a,
+body a {
+  color: black;
+  text-decoration: none;
+}
+html img,
+body img {
+  max-width: 100%;
+}
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.6rem;
+  width: 98%;
+  margin: 1%;
+  padding: 1%;
+}
+nav a {
+  padding: 0px 5px;
+}
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  width: 98%;
+  margin: 1%;
+  padding: 1%;
+  background-color: lightgrey;
+}
+header div {
+  padding: 10px;
+}
+header div img {
+  max-width: 250px;
+}
+header h1 {
+  font-size: 4.8rem;
+}
+header h2 {
+  font-size: 2.4rem;
+}
+header button {
+  border: none;
+  border-radius: 3px;
+  background-color: grey;
+  color: white;
+  font-size: 2.0rem;
+  padding: 10px;
+}
+main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  width: 98%;
+  margin: 1%;
+  padding: 1%;
 }
