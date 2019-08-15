@@ -111,7 +111,6 @@ html, body {
 	// line-height: 1.5em;
 	width: 98%;
 	margin: 1%;
-	padding: 1%;
 }
 
 .button-style(){
@@ -121,6 +120,12 @@ html, body {
 	color: @buttontext;
 	font-size: 2.0rem;
 	padding: 10px;
+}
+
+.h3-style(){
+	font-weight: bold;
+	font-size: 2.4rem;
+	margin-bottom: 10px;
 }
 
 .row-justify-right(){
@@ -183,7 +188,12 @@ header {
 	}
 
 	h1 {
-		font-size: 4.8rem;
+		font-size: 4.2rem;
+		font-weight: bold;
+		margin-bottom: 10px;
+		@media( max-width: 500px ) {
+			font-size: 3.2rem;
+		}
 	}
 	
 	h2 {
@@ -198,4 +208,105 @@ header {
 main {
 	.row-justify-center();
 	.content-style();
+
+	.narrative {
+		width: 48%;
+		margin: 10px 0px;
+		line-height: 1.5em;
+		@media( max-width: 500px ) {
+			width: 100%;
+		}
+		h2 {
+			font-weight: bold;
+			font-size: 2.4rem;
+			margin-bottom: 10px;
+		}
+	}
+
+	.list {
+		width: 48%;
+		margin: 10px 0px;
+		font-size: 2.0 rem;
+		@media( max-width: 500px ) {
+			width: 100%;
+		}
+		h3 {
+			.h3-style();
+		}
+		li {
+			padding: 10px;
+			border: 1px grey solid;
+		}
+	}
+	.table {
+		width: 100%;
+		h3 {
+			.h3-style();
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 10px 0px;
+			font-size: 2.0rem;
+			td {
+				border: 1px solid grey;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+			th {
+				padding: 8px;
+				border: 1px solid grey;
+				text-align: left;
+				font-weight: bold;
+				background-color: @boxcolor;
+				color: @bodycolor;
+			}
+		}
+	}
+	/* Louis' Stretch CSS -- Contact Page -- contact form CSS and HTML modified from W3 Schools */
+
+	.form {
+		width: 100%;
+		h3 {
+			.h3-style();
+		}
+		input[type=text], select, textarea {
+			width: 100%; /* Full width */
+			padding: 12px; /* Some padding */  
+			border: 1px solid #ccc; /* Gray border */
+			border-radius: 4px; /* Rounded borders */
+			box-sizing: border-box; /* Make sure that padding and width stays in place */
+			margin-top: 6px; /* Add a top margin */
+			margin-bottom: 16px; /* Bottom margin */
+			resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+		}
+		
+		/* Style the submit button with a specific background color etc */
+		input[type=submit] {
+			.button-style();
+		}
+		
+		/* When moving the mouse over the submit button */
+		input[type=submit]:hover {
+			background-color: slategray;
+		}
+		
+		/* Add padding around the form */
+		.contact-container {
+			border-radius: 5px;
+			padding: 20px 0px;
+		}
+	}
+}
+
+footer {
+	.row-justify-center();
+	.content-style();
+	.copyright {
+		width: 100%;
+		text-align: center;
+	}
 }

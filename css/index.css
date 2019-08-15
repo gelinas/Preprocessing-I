@@ -164,7 +164,6 @@ nav {
   font-size: 1.6rem;
   width: 98%;
   margin: 1%;
-  padding: 1%;
 }
 nav a {
   padding: 0px 5px;
@@ -177,7 +176,6 @@ header {
   font-size: 1.6rem;
   width: 98%;
   margin: 1%;
-  padding: 1%;
   background-color: lightgrey;
 }
 header div {
@@ -187,7 +185,14 @@ header div img {
   max-width: 250px;
 }
 header h1 {
-  font-size: 4.8rem;
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 3.2rem;
+  }
 }
 header h2 {
   font-size: 2.4rem;
@@ -208,5 +213,126 @@ main {
   font-size: 1.6rem;
   width: 98%;
   margin: 1%;
-  padding: 1%;
+  /* Louis' Stretch CSS -- Contact Page -- contact form CSS and HTML modified from W3 Schools */
+}
+main .narrative {
+  width: 48%;
+  margin: 10px 0px;
+  line-height: 1.5em;
+}
+@media (max-width: 500px) {
+  main .narrative {
+    width: 100%;
+  }
+}
+main .narrative h2 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+main .list {
+  width: 48%;
+  margin: 10px 0px;
+  font-size: 2.0 rem;
+}
+@media (max-width: 500px) {
+  main .list {
+    width: 100%;
+  }
+}
+main .list h3 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+main .list li {
+  padding: 10px;
+  border: 1px grey solid;
+}
+main .table {
+  width: 100%;
+}
+main .table h3 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+main .table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0px;
+  font-size: 2.0rem;
+}
+main .table table td {
+  border: 1px solid grey;
+  padding: 8px;
+}
+main .table table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+main .table table th {
+  padding: 8px;
+  border: 1px solid grey;
+  text-align: left;
+  font-weight: bold;
+  background-color: lightgrey;
+  color: black;
+}
+main .form {
+  width: 100%;
+  /* Style the submit button with a specific background color etc */
+  /* When moving the mouse over the submit button */
+  /* Add padding around the form */
+}
+main .form h3 {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+main .form input[type=text],
+main .form select,
+main .form textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+main .form input[type=submit] {
+  border: none;
+  border-radius: 3px;
+  background-color: grey;
+  color: white;
+  font-size: 2.0rem;
+  padding: 10px;
+}
+main .form input[type=submit]:hover {
+  background-color: slategray;
+}
+main .form .contact-container {
+  border-radius: 5px;
+  padding: 20px 0px;
+}
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.6rem;
+  width: 98%;
+  margin: 1%;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
 }
